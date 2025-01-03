@@ -5,7 +5,8 @@ body{
 
 }
 .container{
-    width: 80%;
+    width: 1140px;
+    max-width: 80%;
     margin: 0 auto;
     flex-wrap: wrap;
  
@@ -14,10 +15,15 @@ header{
     background-color: #efc98b;
     border-radius: 20px;
     flex-wrap: wrap;
+    animation-name: glow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    margin-top: 3rem;
 }
 .navigation{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -27,9 +33,12 @@ header{
     display: flex;
     flex-wrap: wrap;
     box-shadow: 0px 0px 10px white;
+    margin: 10px;
+
 }
 .list{
     display: flex;
+    flex-wrap: wrap;
 }
 .list li{
     margin: 20px;
@@ -53,4 +62,48 @@ header{
 }
 .list .feedback{
     list-style-image:url(./logo/feedback\ \(1\).png);
+}
+.containerinfo{
+    width: 100%;
+    background-color: #efc98b;
+    height: 600px;
+    margin-top: 3rem;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    animation-name: glow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    margin-top: 3rem;
+}
+.bestseller{
+    background-color: black;
+}
+.beenorigin{
+    background-color: black;
+}
+.brewingprocess{
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animation */
+@keyframes glow{
+   0%{box-shadow: 0px 0px 0px white;}
+   50%{box-shadow: 0px 0px 50px white;}
+   100%{box-shadow: 0px 0px 0px white;}
 }
