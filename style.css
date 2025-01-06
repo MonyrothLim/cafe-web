@@ -66,25 +66,41 @@ header{
 .containerinfo{
     width: 100%;
     background-color: #efc98b;
-    height: 600px;
+    height: auto;
     margin-top: 3rem;
     border-radius: 20px;
-    display: flex;
     flex-wrap: wrap;
     animation-name: glow;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-delay: 1s;
     margin-top: 3rem;
+    /* display: flex;
+    align-content: flex-start;
+    flex-direction: row; */
+    /* align-items: center;
+    align-items: flex-end; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* justify-content: center; */
 }
-.bestseller{
-    background-color: black;
+.bestseller .bestsellerimg{
+width: 200px;
 }
-.beenorigin{
-    background-color: black;
+.beanorigin{
+
 }
 .brewingprocess{
-    background-color: black;
+    background-color: rgb(0, 0, 255);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.text{
+    padding: 10px;
+    margin: 5px;
+
 }
 
 
