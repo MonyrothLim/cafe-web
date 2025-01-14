@@ -1,0 +1,156 @@
+body {
+    background-color: #ffe5ba;
+    font-family: "Assistant", serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for all content */
+.container {
+    width: 1140px;
+    max-width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #efc98b;
+    border-radius: 20px;
+    margin: 20px auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 0;
+    animation-name: glow;
+    animation-duration:4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navigation img {
+    width: 10%;
+    box-shadow: 0px 0px 5px white;
+    margin: 0px;
+    border-radius: 50%;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list li {
+    margin: 20px;
+    margin-left: 40px;
+    align-items: center;
+}
+
+.list li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.home{
+    list-style-image: url(./logo/home.png.png);
+}
+.menu{
+    list-style-image:url(./logo/menu.png.png);
+}
+.aboutus{
+    list-style-image: url(./logo/aboutus.png);
+}
+.feedback{
+    list-style-image: url(./logo/feedback\ \(1\).png);
+}
+/* Slider Container */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Max width of the container */
+    height: 800px; /* Set a fixed height to avoid layout issues */
+    margin: 20px auto; /* Added margin to avoid overlap with navigation */
+    overflow: hidden;
+    background-color: #efc98b;
+    padding: 10px;
+    border-radius: 10px;
+    animation-name: glow;
+    animation-duration:4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+.slide {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* Slides - ensure images take the full space of the container */
+.slider-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    border-radius: 10px; 
+}
+/* Description styling */
+.description {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 80%; /* Limit the width of the description */
+    animation: slideIn 3s ease-in-out;
+}
+
+.description h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: 'Lobster', cursive;
+}
+
+.description p {
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+/* Content Section below Slider */
+.containerinfo {
+    width: 100%;
+    background-color: #efc98b;
+    height: auto;
+    margin-top: 3rem;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Animation */
+@keyframes glow {
+    0% {
+        box-shadow: 0px 0px 0px white;
+    }
+
+    50% {
+        box-shadow: 0px 0px 10px white;
+    }
+
+    100% {
+        box-shadow: 0px 0px 0px white;
+    }
+}
