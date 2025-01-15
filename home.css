@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 /* Container for all content */
 .container {
     width: 1140px;
@@ -17,17 +16,17 @@ body {
 header {
     background-color: #efc98b;
     border-radius: 20px;
-    margin: 20px auto;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px auto; /* Centers the header horizontally */
     padding: 10px 0;
     animation-name: glow;
-    animation-duration:4s;
+    animation-duration: 4s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
-
-
+    width: 100%;
+    max-width: 800px;
+    text-align: center; /* Centers the content inside the header */
 }
+
 
 .navigation {
     display: flex;
@@ -60,6 +59,13 @@ header {
     font-weight: 600;
     font-size: 18px;
 }
+.list li a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
 
 .home{
     list-style-image: url(./logo/home.png.png);
@@ -77,11 +83,10 @@ header {
 .slider-container {
     position: relative;
     width: 100%;
-    max-width: 800px; /* Max width of the container */
-    height: 800px; /* Set a fixed height to avoid layout issues */
-    margin: 20px auto; /* Added margin to avoid overlap with navigation */
+    max-width: 800px; 
+    height: 800px;
+    margin: 20px auto; 
     overflow: hidden;
-    background-color: #efc98b;
     padding: 0px;
     border-radius: 20px;
     animation-name: glow;
@@ -91,10 +96,14 @@ header {
 
 }
 .slide {
-    position: relative;
     display: none;
-    width: 100%;
-    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+}
+
+.slide.active {
+    display: block;
+    opacity: 1;
 }
 
 /* Slides - ensure images take the full space of the container */
@@ -132,12 +141,53 @@ header {
 /* Content Section below Slider */
 .containerinfo {
     width: 100%;
-    background-color: #efc98b;
     height: auto;
     margin-top: 3rem;
     border-radius: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    background-color: rgba(239, 201, 139, 0);
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-size: 24px; /* Increase font size if needed */
+    transform: translateY(-50%); /* Adjust to center vertically */
+}
+.prev:hover, .next:hover {
+    color: #efc98b;
+}
+
+.prev {
+    left: 40px; /* Position the button 10px away from the left edge of the image */
+}
+
+.next {
+    right: 40px; /* Position the button 10px away from the right edge of the image */
+}
+
+
+/* Animation */
+@keyframes glow {
+    0% {
+        box-shadow: 0px 0px 0px white;
+    }
+
+    50% {
+        box-shadow: 0px 0px 10px white;
+    }
+
+    100% {
+        box-shadow: 0px 0px 0px white;
+    }
 }
 .moreinfomation{
     position: relative;         /* Make this container a reference point for absolute positioning */
@@ -170,42 +220,42 @@ header {
     border-radius: 10px;  
     text-decoration: none;     
 }
-/* button */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    padding: 16px;
-    background-color: #efc98b;
-    border-radius: 20px;
+
+footer div p a{
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+footer div p .ig:hover{
     color: white;
+    background-image: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7);
     border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    opacity: 60%;
+
 }
-.prev:active, .next:active {
-    background-color: rgba(0, 0, 0, 0.8);
+footer div p .fb:hover{
+    color: white;
+    background-color: #1877F2;
+    border: none;
+    opacity: 80%;
+    transition: all 0.2s ease-in-out;
 }
-
-.prev {
-    left: 10px;
+footer div p .tt:hover{
+    color: white;
+    background-color: #000000;
+    border: none;
+    opacity: 80%;
+    transition: all 0.2s ease-in-out;
 }
-
-.next {
-    right: 10px;
-}
-
-
-/* Animation */
-@keyframes glow {
-    0% {
-        box-shadow: 0px 0px 0px white;
-    }
-
-    50% {
-        box-shadow: 0px 0px 10px white;
-    }
-
-    100% {
-        box-shadow: 0px 0px 0px white;
-    }
+footer div{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px auto;
 }
