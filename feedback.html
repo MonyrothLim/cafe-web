@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navigation">
+                <img src="./logo/Youmade logo.jpg">
+                <div>
+                    <ul class="list">
+                        <li class="home"><a href="home.html">Home</a></li>
+                        <li class="menu"><a href="menu.html">Menu</a></li>
+                        <li class="aboutus"><a href="aboutus.html">About us</a></li>
+                        <li class="feedback"><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <hr  width="800px" size="1" color="black" noshade>
+    <div class="container2">
+        <div class="feedbackbox">
+            <div></div>
+            <h2>We Value Your Opinion</h2>
+            <p>How would you rate your overall experince ?</p>
+            <form action="/submit-feedback" method="post">
+                <div class="rating">
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1" title="1 star">★</label>
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2" title="2 stars">★</label>
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3" title="3 stars">★</label>
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4" title="4 stars">★</label>
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5" title="5 stars">★</label>
+                </div>
+                
+                <textarea name="comments" placeholder="Tell us more about your experience..." rows="4"></textarea>
+                <input type="email" placeholder="Email" class="email">
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+    <hr  width="800px" size="1" color="black" noshade>
+    <footer>
+        <div>
+            <p><a class="ig" href="https://www.instagram.com/you.mad.e?igsh=MWVyODA3azRnN2Vxdg==" target="_blank">Instagram</a></p>
+            <p><a class="fb" href="https://www.facebook.com/profile.php?id=61558740467369&mibextid=ZbWKwL" target="_blank">Facebook</a></p>
+            <p><a class="tt" href="https://www.tiktok.com/@youmade_?_t=ZS-8t5AyQc4gMM&_r=1" target="_blank">TikTok</a></p>
+        </div>
+        <hr width="800px" size="1" color="black" noshade>
+        <div class="copyright">
+            <p style="font-weight: bold;">2024-2025 You-Made Café</p><p>All rights reserved.</p>
+            <p>Contact us via email: youmadecafe@gmail.com</p>
+        </div>
+    </footer>
+    <script src="feedback.js"></script>
+</body>
+</html>

@@ -4,19 +4,16 @@ body {
     margin: 0;
     padding: 0;
 }
-/* Container for all content */
 .container {
     width: 1140px;
     max-width: 80%;
     margin: 0 auto;
     flex-wrap: wrap;
 }
-
-/* Header and Navigation */
 header {
     background-color: #efc98b;
     border-radius: 20px;
-    margin: 20px auto; /* Centers the header horizontally */
+    margin: 20px auto; 
     padding: 10px 0;
     animation-name: glow;
     animation-duration: 4s;
@@ -24,49 +21,47 @@ header {
     animation-iteration-count: infinite;
     width: 100%;
     max-width: 800px;
-    text-align: center; /* Centers the content inside the header */
+    text-align: center; 
 }
-
-
 .navigation {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
-
 .navigation img {
     width: 10%;
     box-shadow: 0px 0px 5px white;
     margin: 0px;
     border-radius: 50%;
 }
-
 .list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
-
 .list li {
-    margin: 20px;
+    margin: 10px;
     margin-left: 40px;
     align-items: center;
 }
-
 .list li a {
     text-decoration: none;
     color: black;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
 }
 .list li a:hover {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     transition: all 0.3s ease-in-out;
 }
-
+.list li a.active {
+    color: white; 
+    text-decoration: underline;
+    font-size: 16px;
+}
 .home{
     list-style-image: url(./logo/home.png.png);
 }
@@ -79,7 +74,25 @@ header {
 .feedback{
     list-style-image: url(./logo/feedback\ \(1\).png);
 }
-/* Slider Container */
+.list .login a{
+    font-size: 16px;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+}
+.list .login a:hover{
+    font-size: 18px;
+    list-style: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 10px;
+    background-color: black;
+}
+.list .login {
+    font-size: 20px;
+    list-style: none;
+}
 .slider-container {
     position: relative;
     width: 100%;
@@ -105,40 +118,33 @@ header {
     display: block;
     opacity: 1;
 }
-
-/* Slides - ensure images take the full space of the container */
 .slider-container img {
     width: 100%;
     height: 100%;
     object-fit: contain; 
     border-radius: 20px; 
 }
-/* Description styling */
 .description {
     position: absolute;
     bottom: 20px;
     left: 20px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 15px;
     border-radius: 10px;
-    max-width: 80%; /* Limit the width of the description */
+    max-width: 80%; 
     animation: slideIn 3s ease-in-out;
 }
-
 .description h2 {
     margin: 0;
     font-weight: 400;
     font-size: 1.5rem;
     font-family: 'Lobster', cursive;
 }
-
 .description p {
     margin-top: 5px;
     font-size: 1rem;
 }
-
-/* Content Section below Slider */
 .containerinfo {
     width: 100%;
     height: auto;
@@ -147,35 +153,30 @@ header {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
 .prev, .next {
     position: absolute;
     top: 50%;
     padding: 16px;
     background-color: rgba(239, 201, 139, 0);
     border-radius: 20px;
-    color: white;
+    color:#efc98b;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     text-align: center;
-    font-size: 24px; /* Increase font size if needed */
-    transform: translateY(-50%); /* Adjust to center vertically */
+    font-size: 24px; 
 }
 .prev:hover, .next:hover {
-    color: #efc98b;
+    color: #c09858;
+    scale: 1.4;
+    transition: all 0.2s ease;
+    background-color: rgba(239, 201, 139, 0.25);
 }
-
 .prev {
-    left: 40px; /* Position the button 10px away from the left edge of the image */
+    left: 40px;
 }
-
 .next {
-    right: 40px; /* Position the button 10px away from the right edge of the image */
+    right: 40px; 
 }
-
-
-/* Animation */
 @keyframes glow {
     0% {
         box-shadow: 0px 0px 0px white;
@@ -190,12 +191,11 @@ header {
     }
 }
 .moreinfomation{
-    position: relative;         /* Make this container a reference point for absolute positioning */
+    position: relative;       
     width: 100%;
-    max-width: 800px;           /* Optional: restrict the max width */
-    margin: 0 auto;             /* Center the container horizontally */
-
-}
+    max-width: 800px; 
+    margin: 10px auto;
+}         
 .moreinfomation img{
     height: auto;
     width: 100%;
@@ -220,7 +220,12 @@ header {
     border-radius: 10px;  
     text-decoration: none;     
 }
-
+.moreinfomation p a:hover{
+    background-color: #efc98b;
+    color: rgba(0, 0, 0);
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
 footer div p a{
     color: black;
     text-decoration: none;
@@ -258,4 +263,18 @@ footer div{
     justify-content: space-between;
     text-align: center;
     margin: 20px auto;
+}
+@keyframes blur{
+    0%{
+        filter: blur(20px);
+        opacity: 0;
+    }
+    100%{
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+.container2{
+    animation-name: blur;
+    animation-duration: 1s;
 }

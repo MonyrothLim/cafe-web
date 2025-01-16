@@ -1,0 +1,267 @@
+body {
+    background-color: #ffe5ba;
+    font-family: "Assistant", serif;
+    margin: 0;
+    padding: 0;
+}
+/* Container for all content */
+.container {
+    width: 1140px;
+    max-width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #efc98b;
+    border-radius: 20px;
+    margin: 20px auto; /* Centers the header horizontally */
+    padding: 10px 0;
+    animation-name: glow;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    width: 100%;
+    max-width: 800px;
+    text-align: center; /* Centers the content inside the header */
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navigation img {
+    width: 10%;
+    box-shadow: 0px 0px 5px white;
+    margin: 0px;
+    border-radius: 50%;
+}
+
+.list {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.list li {
+    margin: 10px;
+    margin-left: 40px;
+    align-items: center;
+}
+
+.list li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+.list li a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+.list li a.active {
+    color: white; 
+    text-decoration: underline;
+    font-size: 16px;
+}
+.home{
+    list-style-image: url(./logo/home.png.png);
+}
+.menu{
+    list-style-image:url(./logo/menu.png.png);
+}
+.aboutus{
+    list-style-image: url(./logo/aboutus.png);
+}
+.feedback{
+    list-style-image: url(./logo/feedback\ \(1\).png);
+}
+.list .login a{
+    font-size: 20px;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+}
+.list .login a:hover{
+    font-size: 20px;
+    list-style: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 10px;
+    background-color: black;
+}
+.list .login {
+    font-size: 20px;
+    list-style: none;
+}
+footer div p a{
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+footer div p .ig:hover{
+    color: white;
+    background-image: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7);
+    border: none;
+    opacity: 60%;
+
+}
+footer div p .fb:hover{
+    color: white;
+    background-color: #1877F2;
+    border: none;
+    opacity: 80%;
+    transition: all 0.2s ease-in-out;
+}
+footer div p .tt:hover{
+    color: white;
+    background-color: #000000;
+    border: none;
+    opacity: 80%;
+    transition: all 0.2s ease-in-out;
+}
+footer div{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px auto;
+}
+.container h2{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.blog{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.containerimage{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.containerimage img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    transform: scale(1.2);
+
+}
+.outdoor{
+    text-align: right;
+}
+.blog2{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.containerimage2{
+    width: 100%;
+    max-width: 500px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.containerimage2 img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    transform: scale(1.2);
+
+}
+
+.blog3{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.containerimage3{
+    width: 100%;
+    max-width: 130px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.containerimage3 img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    transform: scale(1.2);
+
+}
+.blog4{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    display: flex; 
+}
+body img{
+    animation-name: scale;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes scale{
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+}
+@keyframes blur{
+    0%{
+        filter: blur(20px);
+        opacity: 0;
+    }
+    100%{
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+body .content{
+    animation-name: blur;
+    animation-duration: 1s;
+
+}
