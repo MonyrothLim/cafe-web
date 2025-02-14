@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Lobster&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navigation">
+                <img src="./logo/Youmade logo.jpg">
+                <div>
+                    <ul class="list">
+                        <li class="home"><a href="home.html">Home</a></li>
+                        <li class="menu"><a href="menu.html">Menu</a></li>
+                        <li class="aboutus"><a href="aboutus.html">About us</a></li>
+                        <li class="feedback"><a href="feedback.html">Feedback</a></li>
+                        <li class="login">
+                            <a href="login.html">Login</a>
+                        </li>
+                        <li class="register">
+                            <a href="register.html">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+
+    <div class="container" style="animation: blur 1s;">
+        <div class="register-form">
+            <h2>Register</h2>
+            <form id="registerForm" action="/register" method="post">
+                <input id="username" type="text" name="username" placeholder="Enter your username" required>
+                <input id="email" type="email" name="email" placeholder="Enter your email" required>
+                <input id="password" type="password" name="password" placeholder="Enter your password" required>
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="login.html" target="_self">Login here</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <p><a class="ig" href="https://www.instagram.com/you.mad.e?igsh=MWVyODA3azRnN2Vxdg=="
+                    target="_blank">Instagram</a></p>
+            <p><a class="fb" href="https://www.facebook.com/profile.php?id=61558740467369&mibextid=ZbWKwL"
+                    target="_blank">Facebook</a></p>
+            <p><a class="tt" href="https://www.tiktok.com/@youmade_?_t=ZS-8t5AyQc4gMM&_r=1" target="_blank">TikTok</a>
+            </p>
+        </div>
+        <hr width="800px" size="1" color="black" noshade>
+        <div class="copyright">
+            <p style="font-weight: bold;">2024-2025 You-Made Café</p>
+            <p>All rights reserved.</p>
+            <p>Contact us via email: youmadecafe@gmail.com</p>
+        </div>
+    </div>
+    </footer>
+
+</body>
+<script src="register.js"></script>
+</html>

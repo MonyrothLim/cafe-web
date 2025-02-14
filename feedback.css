@@ -11,6 +11,35 @@ body {
     margin: 0 auto;
     flex-wrap: wrap;
 }
+/* Login and Register Buttons */
+.list .login a{
+    font-size: 18px;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.list .register a {
+    font-size: 18px;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.list .login a:hover,
+.list .register a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
 
 /* Header and Navigation */
 header {
@@ -36,7 +65,8 @@ header {
 }
 
 .navigation img {
-    width: 10%;
+    width: 80px;
+    height: auto;
     box-shadow: 0px 0px 5px white;
     margin: 0px;
     border-radius: 50%;
@@ -80,7 +110,7 @@ header {
 .aboutus{
     list-style-image: url(./logo/aboutus.png);
 }
-.feedback{
+.feedback {
     list-style-image: url(./logo/feedback\ \(1\).png);
 }
 .list .login a{
@@ -99,6 +129,25 @@ header {
     background-color: black;
 }
 .list .login {
+    font-size: 20px;
+    list-style: none;
+}
+.list .register a{
+    font-size: 20px;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+}
+.list .register a:hover{
+    font-size: 20px;
+    list-style: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 10px;
+    background-color: black;
+}
+.list .register {
     font-size: 20px;
     list-style: none;
 }
@@ -182,16 +231,11 @@ footer div{
     transition: color 0.3s;
 }
 
-.rating input:checked ~ label {
-    color: orange; 
-}
-.rating label:hover{
-    color:orange;
-}
+.rating input:checked + label,
+.rating label:hover,
 .rating label:hover ~ label {
-    color: (0,0,0,0);
+    color: orange;
 }
-
 
 textarea {
     width: 90%;

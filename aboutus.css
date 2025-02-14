@@ -71,6 +71,44 @@ header {
     text-decoration: underline;
     font-size: 16px;
 }
+.list .login a{
+    font-size: 20px;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+}
+.list .login a:hover{
+    font-size: 20px;
+    list-style: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 10px;
+    background-color: black;
+}
+.list .login {
+    font-size: 20px;
+    list-style: none;
+}
+.list .register a{
+    font-size: 20px;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+}
+.list .register a:hover{
+    font-size: 20px;
+    list-style: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 10px;
+    background-color: black;
+}
+.list .register {
+    font-size: 20px;
+    list-style: none;
+}
 .home{
     list-style-image: url(./logo/home.png.png);
 }
